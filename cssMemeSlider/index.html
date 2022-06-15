@@ -15,40 +15,42 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+    <div class="container middle">
 
-    <div>
-        <input type="radio" name="dot" id="winter"/>
-        <input type="radio" name="dot" id="spring"/>
-        <input type="radio" name="dot" id="summer"/>
-        <input type="radio" name="dot" id="autumn"/>
-    </div>
-
-    <div>
-        <label for="winter">Winter</label>
-        <label for="spring">Spring</label>
-        <label for="summer">Summer</label>
-        <label for="autumn">Autumn</label>
-    </div>
-
-    <div class="container">
-        <ul class="list cards">
+        <ul class="list cards"> 
             <li class="cards__item">
-                <img src="./asset/winter.jpg" alt="winter" class="img"/>
+                <img src="./asset/winter.jpg" alt="winter"/>
             </li>
             <li class="cards__item">
-                <img src="./asset/spring.jpg" alt="spring" class="img" />
+                <img src="./asset/spring.jpg" alt="spring" />
             </li>
             <li class="cards__item">
-                <img src="./asset/summer.jpg" alt="summer" class="img" />
+                <img src="./asset/summer.jpg" alt="summer"/>
             </li>
             <li class="cards__item">
-                <img src="./asset/autumn.jpg" alt="autumn" class="img" />
+                <img src="./asset/autumn.jpg" alt="autumn" />
             </li>
         </ul>
 
-        <div>
-            
+        <div class="navigation">
+            <div class="dots">
+                <input type="radio" name="dot" id="winter" class="dot" checked/>
+                <input type="radio" name="dot" id="spring" class="dot"/>
+                <input type="radio" name="dot" id="summer" class="dot"/>
+                <input type="radio" name="dot" id="autumn" class="dot"/>
+            </div>
+        
+            <div class="titles">
+                <label for="winter" class="label">Winter</label>
+                <label for="spring" class="label">Spring</label>
+                <label for="summer" class="label">Summer</label>
+                <label for="autumn" class="label">Autumn</label>
+            </div>
+
         </div>
-    </div>   
+
+    </div>
+            
+     
 </body>
 </html>

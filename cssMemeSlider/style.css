@@ -1,11 +1,23 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(180, 130, 186);
 }
 
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+
+  .container {
+    background-color: rgb(24, 25, 27);
+    overflow: hidden;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   img {
@@ -16,18 +28,56 @@ body {
 
   .cards {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    width: 400%;
+    height: 100%;
   }
 
   .cards__item {
-    width: 500px;
-    height: 350px;
+    width: 25%;
+    transition: all 250ms linear;
   }
 
-  .img {
-    width: 100%;
-    height: 100%;
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 40px 30px;
   }
+
+  .label {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 250ms linear;
+    
+  }
+
+  .label:hover {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .dot {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 250ms linear;
+  }
+
+  .dot:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+ 
