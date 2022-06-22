@@ -15,42 +15,55 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div class="container middle">
 
-        <ul class="list cards"> 
-            <li class="cards__item">
-                <img src="./asset/winter.jpg" alt="winter"/>
-            </li>
-            <li class="cards__item">
-                <img src="./asset/spring.jpg" alt="spring" />
-            </li>
-            <li class="cards__item">
-                <img src="./asset/summer.jpg" alt="summer"/>
-            </li>
-            <li class="cards__item">
-                <img src="./asset/autumn.jpg" alt="autumn" />
-            </li>
-        </ul>
-
-        <div class="navigation">
-            <div class="dots">
-                <input type="radio" name="dot" id="winter" class="dot" checked/>
-                <input type="radio" name="dot" id="spring" class="dot"/>
-                <input type="radio" name="dot" id="summer" class="dot"/>
-                <input type="radio" name="dot" id="autumn" class="dot"/>
-            </div>
+    <div class="container">
         
-            <div class="titles">
-                <label for="winter" class="label">Winter</label>
-                <label for="spring" class="label">Spring</label>
-                <label for="summer" class="label">Summer</label>
-                <label for="autumn" class="label">Autumn</label>
-            </div>
+        <input type="radio" name="card" id="winter" checked>
+        <input type="radio" name="card" id="spring">
+        <input type="radio" name="card" id="summer">
+        <input type="radio" name="card" id="autumn">
 
+        <div class="cards">
+            <div class="cards__item active"><img src="./asset/winter.jpg" alt="winter" /></div>
+            <div class="cards__item"><img src="./asset/spring.jpg" alt="spring" /></div>
+            <div class="cards__item"><img src="./asset/summer.jpg" alt="summer" /></div>
+            <div class="cards__item"><img src="./asset/autumn.jpg" alt="autumn" /></div>
         </div>
+      
+        <div class="wrap">
+          <div class="overflow">
+            <div class="titles">
+                <p class="title title--active">
+                    <span class="inner">Winter</span> </p>
+                <p class="title">
+                    <span class="inner">Spring</span></p>
+                <p class="title">
+                    <span class="inner">Summer</span>
+                </p>
+                <p class="title">
+                    <span class="inner">Autumn</span>
+                </p>
+            </div>
+          </div>
+           
 
+            <div class="controls">
+                <label for="winter" class="dot ">
+                    <span class="dot__point"></span>
+                </label>
+                <label for="spring" class="dot">
+                    <span class="dot__point"></span>
+                </label>
+                <label for="summer" class="dot">
+                    <span class="dot__point"></span>
+                </label>
+                <label for="autumn" class="dot">
+                    <span class="dot__point"></span>
+                </label>
+            </div>
+        </div>
     </div>
-            
-     
+
+ 
 </body>
 </html>
